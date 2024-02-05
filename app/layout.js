@@ -1,4 +1,6 @@
 import "@styles/globals.css";
+import Nav from "@componets/Nav";
+import Provider from "@componets/Provider";
 
 export const metadata = {
   title: "PetPrompt",
@@ -12,7 +14,10 @@ const RootLayout = ({ children }) => {
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
